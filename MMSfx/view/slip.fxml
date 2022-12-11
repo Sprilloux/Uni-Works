@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+
+
+<VBox  fx:controller="controller.MMSlipController" prefWidth="600" prefHeight="338" styleClass="background"  xmlns:fx="http://javafx.com/fxml/1">
+    <GridPane vgap="10"  prefHeight="338.0" prefWidth="600.0" styleClass="background" alignment="CENTER_LEFT"
+              xmlns:fx="http://javafx.com/fxml/1" >
+        <Label styleClass="label-h2" text="Membership Slip:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+
+        <Label  text="Total Credits:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <Text fx:id="TotalCreditsTxt" styleClass="text-out" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <Label  text="Pay Per Credit:" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        <Text fx:id="PPCreditTxt" styleClass="text-out" text=" " GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+
+        <Label  text="Total Expense:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <Text fx:id="TotalExpenseTxt" styleClass="text-out" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+        <Label  text="Dollar Available:" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+        <Text fx:id="DollarAvailableTxt" styleClass="text-out" text=" " GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+
+        <Label  text="Gasdeduction Rate:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <Text fx:id="GasDDRateTxt" styleClass="text-out" text=" " GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+        <Label  text="Deduction Rate:" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+        <Text fx:id="DDRateTxt" styleClass="text-out" text=" " GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+
+
+
+
+
+
+
+    </GridPane>
+    <stylesheets>
+        <URL value="@mmsfx.css"/>
+    </stylesheets>
+    <padding>
+        <Insets top="5" bottom="5" left="5" right="5" />
+    </padding>
+    <HBox alignment="CENTER">
+        <Button text="Close" onAction="#handlequit" alignment="CENTER" />
+    </HBox>
+    <padding>
+        <Insets top="10" bottom="10" left="10" right="10" />
+    </padding>
+
+</VBox>
+
+
+
+
+
+
